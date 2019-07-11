@@ -1,0 +1,74 @@
+<div *ngIf="customer">
+
+	<h2>{{customer.firstName}} details:</h2>
+	<table style= "width:100%"> 
+
+	<tr>
+	<th>Id</th>
+	<th>First Name </th>	
+	<th>Last Name  </th>
+	<th>Email </th>
+	<th>Username </th>
+	<th>Account Type</th>
+	<th>Telephone Number </th>
+	<th>Address </th>
+	<th>State</th>
+	<th>Zip</th>
+	</tr>	 
+ 
+    <tr>
+    	<td>	
+			<div>
+				{{customer.id}}
+			</div>
+    	</td>
+		<td>	
+			<div>
+				{{customer.firstName}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+				{{customer.lastName}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+		    	{{customer.email}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+				{{customer.username}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+		    	 {{customer.account_type}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+			 	{{customer.telephone_no}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+			 	{{customer.address}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+			 {{customer.state}}
+			</div>
+    	</td>
+    	<td>	
+			<div>
+				 {{customer.zip}}
+			</div>
+    	</td>
+    </tr>
+	</table>
+	
+	<button class="btn btn-danger" (click)="delete()">Delete</button>
+</div>
